@@ -5,7 +5,7 @@
 import emoji from 'react-easy-emoji';
 
 const illustration = {
-  animated: false, // set to false to use static SVG
+  animated: true, // set to false to use static SVG
 };
 
 const greeting = {
@@ -111,8 +111,9 @@ https://fontawesome.com/icons?d=gallery */
 const skills = {
   data: [
     {
-      title: "Data Science",
-      illustration: require("./assets/lottie/codingPerson"),
+      title: "Robotics",
+      illustration: require("./assets/lottie/robotic"),
+      illustrationDark: require("./assets/lottie/robotic-dark"),
       skills: [
         "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
         "⚡ Experience of working with Computer Vision and NLP projects",
@@ -152,8 +153,9 @@ const skills = {
       ],
     },
     {
-      title: "Full Stack Development",
-      illustration: require("./assets/lottie/codingPerson"),
+      title: "Machine Learning",
+      illustration: require("./assets/lottie/robotic"),
+      illustrationDark: require("./assets/lottie/robotic-dark"),
       skills: [
         "⚡ Building resposive website front end using React, Vue, Bootstrap.",
         "⚡ Developing mobile applications using Flutter, React Native ",
@@ -228,8 +230,9 @@ const skills = {
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
-      illustration: require("./assets/lottie/codingPerson"),
+      title: "Web Development",
+      illustration: require("./assets/lottie/robotic"),
+      illustrationDark: require("./assets/lottie/robotic-dark"),
       skills: [
         "⚡ Experience working on multiple cloud platforms",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
@@ -281,8 +284,9 @@ const skills = {
       ],
     },
     {
-      title: "UI/UX Design",
-      illustration: require("./assets/lottie/codingPerson"),
+      title: "CAD & Electronics",
+      illustration: require("./assets/lottie/robotic"),
+      illustrationDark: require("./assets/lottie/robotic-dark"),
       skills: [
         "⚡ Designing highly attractive user interface for mobile and web applications",
         "⚡ Customizing logo designs and building logos from scratch",
@@ -329,24 +333,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: 'Harvard University',
+      schoolName: 'Institut Teknologi Bandung',
       logo: require('./assets/images/harvardLogo.png'),
-      subHeader: 'Master of Science in Computer Science',
-      duration: 'September 2017 - April 2019',
+      subHeader: 'Bachelor of Electrical Engineering',
+      duration: 'August 2016 - April 2021',
       desc: 'Participated in the research of XXX and published 3 papers.',
       descBullets: [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       ],
-    },
-    {
-      schoolName: 'Stanford University',
-      logo: require('./assets/images/stanfordLogo.png'),
-      subHeader: 'Bachelor of Science in Computer Science',
-      duration: 'September 2013 - April 2017',
-      desc:
-        'Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...',
-      descBullets: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit'],
     },
   ],
 };
@@ -378,7 +373,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: 'Software Engineer',
+      role: 'Robotics Software Engineer',
       company: 'Facebook',
       company_url: "https://www.facebook.com/",
       companylogo: require('./assets/images/facebookLogo.png'),
@@ -391,7 +386,7 @@ const workExperiences = {
       ],
     },
     {
-      role: 'Front-End Developer',
+      role: 'Electronics and System ',
       company: 'Quora',
       company_url: 'https://www.facebook.com',
       companylogo: require('./assets/images/quoraLogo.png'),
