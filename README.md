@@ -41,3 +41,9 @@ https://lottiefiles.com/asvg
 
 Mirza Jirong
 https://lottiefiles.com/mirzajirong
+
+Tamojit Das
+https://lottiefiles.com/tamojitdas
+
+Shinan
+https://lottiefiles.com/shinan

@@ -17,6 +17,8 @@ export default class DisplayLottie extends Component {
           <div onClick='null'>
             <Lottie 
               options={defaultOptions}
+              height={480}
+              width={480}
             />
           </div>
         </Suspense>

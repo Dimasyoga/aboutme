@@ -154,8 +154,8 @@ const skills = {
     },
     {
       title: "Machine Learning",
-      illustration: require("./assets/lottie/robotic"),
-      illustrationDark: require("./assets/lottie/robotic-dark"),
+      illustration: require("./assets/lottie/charts"),
+      illustrationDark: require("./assets/lottie/charts"),
       skills: [
         "⚡ Building resposive website front end using React, Vue, Bootstrap.",
         "⚡ Developing mobile applications using Flutter, React Native ",
@@ -231,8 +231,8 @@ const skills = {
     },
     {
       title: "Web Development",
-      illustration: require("./assets/lottie/robotic"),
-      illustrationDark: require("./assets/lottie/robotic-dark"),
+      illustration: require("./assets/lottie/webDev"),
+      illustrationDark: require("./assets/lottie/webDev"),
       skills: [
         "⚡ Experience working on multiple cloud platforms",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
@@ -285,8 +285,8 @@ const skills = {
     },
     {
       title: "CAD & Electronics",
-      illustration: require("./assets/lottie/robotic"),
-      illustrationDark: require("./assets/lottie/robotic-dark"),
+      illustration: require("./assets/lottie/circuit"),
+      illustrationDark: require("./assets/lottie/circuit"),
       skills: [
         "⚡ Designing highly attractive user interface for mobile and web applications",
         "⚡ Customizing logo designs and building logos from scratch",
