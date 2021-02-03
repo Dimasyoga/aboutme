@@ -98,15 +98,15 @@ const skills = {
         {
           skillName: "Tensorflow",
           fontIcon: require('./assets/icons/tensorflow-icon.svg'),
-          url: '',
+          url: 'https://www.tensorflow.org/',
           style: {
             color: "#E34F26",
           },
         },
         {
           skillName: "Keras",
-          fontIcon: "simple-icons:keras",
-          url: '',
+          fontIcon: require('./assets/icons/Keras_logo.svg'),
+          url: 'https://keras.io/',
           style: {
             backgroundColor: "white",
             color: "#D00000",
@@ -114,24 +114,24 @@ const skills = {
         },
         {
           skillName: "Scikit-Learn",
-          fontIcon: "simple-icons:scikit-learn",
-          url: '',
+          fontIcon: require('./assets/icons/Scikit_learn_logo_small.svg'),
+          url: 'https://scikit-learn.org/stable/',
           style: {
             color: "#1572B6",
           },
         },
         {
           skillName: "OpenCV",
-          fontIcon: "logos-opencv",
-          url: '',
+          fontIcon: require('./assets/icons/OpenCV_Logo_with_text_svg_version.svg'),
+          url: 'https://opencv.org/',
           style: {
             color: "#CC6699",
           },
         },
         {
           skillName: "Python",
-          fontIcon: "fab fa-python",
-          url: '',
+          fontIcon: require('./assets/icons/Python-logo-notext.svg'),
+          url: 'https://www.python.org/',
           style: {
             backgroundColor: "transparent",
             color: "#3776AB",
@@ -151,24 +151,24 @@ const skills = {
       softwareSkills: [
         {
           skillName: "HTML5",
-          fontIcon: "fab fa-html5",
-          url: '',
+          fontIcon: require('./assets/icons/HTML5_logo_and_wordmark.svg'),
+          url: 'https://html5.org/',
           style: {
             color: "#E34F26",
           },
         },
         {
           skillName: "CSS3",
-          fontIcon: "fab fa-css3-alt",
-          url: '',
+          fontIcon: require('./assets/icons/CSS3_logo_and_wordmark.svg'),
+          url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
           style: {
             color: "#1572B6",
           },
         },
         {
           skillName: "JavaScript",
-          fontIcon: "fab fa-js",
-          url: '',
+          fontIcon: require('./assets/icons/Unofficial_JavaScript_logo_2.svg'),
+          url: 'https://www.javascript.com/',
           style: {
             backgroundColor: "#000000",
             color: "#F7DF1E",
@@ -176,56 +176,56 @@ const skills = {
         },
         {
           skillName: "ReactJS",
-          fontIcon: "fab fa-react",
-          url: '',
+          fontIcon: require('./assets/icons/React-icon.svg'),
+          url: 'https://reactjs.org/',
           style: {
             color: "#61DAFB",
           },
         },
         {
           skillName: "NodeJS",
-          fontIcon: "fab fa-node",
-          url: '',
+          fontIcon: require('./assets/icons/Node.js_logo.svg'),
+          url: 'https://nodejs.org/en/',
           style: {
             color: "#339933",
           },
         },
         {
           skillName: "GCP",
-          fontIcon: "simple-icons:googlecloud",
-          url: '',
+          fontIcon: require('./assets/icons/google-cloud-platform.svg'),
+          url: 'https://cloud.google.com/',
           style: {
             color: "#4285F4",
           },
         },
         {
           skillName: "Firebase",
-          fontIcon: "fas fa-fire",
-          url: '',
+          fontIcon: require('./assets/icons/google_firebase.svg'),
+          url: 'https://firebase.google.com/',
           style: {
             color: "#FFCA28",
           },
         },
         {
           skillName: "MongoDB",
-          fontIcon: "simple-icons:mongodb",
-          url: '',
+          fontIcon: require('./assets/icons/mongodb.svg'),
+          url: 'https://www.mongodb.com/',
           style: {
             color: "#47A248",
           },
         },
         {
           skillName: "PostgreSQL",
-          fontIcon: "simple-icons:postgresql",
-          url: '',
+          fontIcon: require('./assets/icons/Postgresql_elephant.svg'),
+          url: 'https://www.postgresql.org/',
           style: {
             color: "#47A248",
           },
         },
         {
           skillName: "Docker",
-          fontIcon: "fab fa-docker",
-          url: '',
+          fontIcon: require('./assets/icons/docker.svg'),
+          url: 'https://www.docker.com/',
           style: {
             color: "#1488C6",
           },
@@ -244,50 +244,56 @@ const skills = {
       softwareSkills: [
         {
           skillName: "KiCad",
-          fontIcon: "",
-          url: '',
+          fontIcon: require('./assets/icons/KiCad-Logo.svg'),
+          url: 'https://kicad.org/',
           style: {
-            color: "#FF2BC2",
+            backgroundColor: "white",
+            color: "#D00000",
           },
         },
         {
           skillName: "Altium",
-          fontIcon: "",
-          url: '',
+          fontIcon: require('./assets/icons/altium-logo.svg'),
+          url: 'https://www.altium.com/',
           style: {
-            color: "#F24E1E",
+            backgroundColor: "white",
+            color: "#D00000",
           },
         },
         {
           skillName: "Eagle",
-          fontIcon: "",
-          url: '',
+          fontIcon: require('./assets/icons/eagle-logo.svg'),
+          url: 'https://www.autodesk.com/products/eagle/overview',
           style: {
-            color: "#FF7C00",
+            backgroundColor: "white",
+            color: "#D00000",
           },
         },
         {
           skillName: "LTspice",
-          fontIcon: "",
-          url: '',
+          fontIcon: require('./assets/icons/Logo_Linear_Technology.svg'),
+          url: 'https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html',
           style: {
-            color: "#000000",
+            backgroundColor: "white",
+            color: "#D00000",
           },
         },
         {
           skillName: "Solidworks",
-          fontIcon: "",
-          url: '',
+          fontIcon: require('./assets/icons/solidworks-logo.svg'),
+          url: 'https://www.solidworks.com/',
           style: {
-            color: "#000000",
+            backgroundColor: "white",
+            color: "#D00000",
           },
         },
         {
           skillName: "MATLAB",
-          fontIcon: "",
-          url: '',
+          fontIcon: require('./assets/icons/Matlab_Logo.svg'),
+          url: 'https://www.mathworks.com/products/matlab.html',
           style: {
-            color: "#000000",
+            backgroundColor: "white",
+            color: "#D00000",
           },
         },
       ],
