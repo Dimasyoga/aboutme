@@ -9,8 +9,8 @@ const illustration = {
 };
 
 const greeting = {
-  username: 'Still in development',
-  title: "Hi all, I'm Dimas",
+  username: 'Dimas Yoga',
+  title: "Still in development",
   subTitle: emoji(
     ''
   ),
@@ -35,118 +35,51 @@ const socialMediaLinks = {
 
 // Skills Section
 
-const skillsSection = {
-  title: 'What I do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
-  skills: [
-    emoji(
-      '⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications'
-    ),
-    emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'),
-    emoji(
-      '⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean'
-    ),
-  ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: 'html-5',
-      fontAwesomeClassname: 'fab fa-html5',
-    },
-    {
-      skillName: 'css3',
-      fontAwesomeClassname: 'fab fa-css3-alt',
-    },
-    {
-      skillName: 'sass',
-      fontAwesomeClassname: 'fab fa-sass',
-    },
-    {
-      skillName: 'JavaScript',
-      fontAwesomeClassname: 'fab fa-js',
-    },
-    {
-      skillName: 'reactjs',
-      fontAwesomeClassname: 'fab fa-react',
-    },
-    {
-      skillName: 'nodejs',
-      fontAwesomeClassname: 'fab fa-node',
-    },
-    {
-      skillName: 'swift',
-      fontAwesomeClassname: 'fab fa-swift',
-    },
-    {
-      skillName: 'npm',
-      fontAwesomeClassname: 'fab fa-npm',
-    },
-    {
-      skillName: 'sql-database',
-      fontAwesomeClassname: 'fas fa-database',
-    },
-    {
-      skillName: 'aws',
-      fontAwesomeClassname: 'fab fa-aws',
-    },
-    {
-      skillName: 'firebase',
-      fontAwesomeClassname: 'fas fa-fire',
-    },
-    {
-      skillName: 'python',
-      fontAwesomeClassname: 'fab fa-python',
-    },
-    {
-      skillName: 'docker',
-      fontAwesomeClassname: 'fab fa-docker',
-    },
-  ],
-  display: true, // Set false to hide this section, defaults to true
-};
-
 const skills = {
+  display: true,
   data: [
     {
       title: "Robotics",
       illustration: require("./assets/lottie/robotic"),
       illustrationDark: require("./assets/lottie/robotic-dark"),
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+        "Developing robots with advanced technology",
+        "Experienced working with various type of robots such as wheeled robots, bipedal robots, and flying robots",
+        "Working in teams for various national and international robotics competitions",
       ],
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
+          skillName: "ROS",
+          fontIcon: require('./assets/icons/Ros_logo.svg'),
+          url: 'https://www.ros.org/',
           style: {
             backgroundColor: "transparent",
           },
         },
         {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
+          skillName: "Gazebo",
+          fontIcon: require('./assets/icons/gazebo_logo.svg'),
+          url: 'http://gazebosim.org/',
           style: {
             backgroundColor: "white",
             color: "#D00000",
           },
         },
         {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
+          skillName: "ArduPilot",
+          fontIcon: require('./assets/icons/ardupilot_logo.svg'),
+          url: 'https://ardupilot.org/',
           style: {
-            backgroundColor: "transparent",
+            backgroundColor: "white",
+            color: "#D00000",
           },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
+          skillName: "Robotis",
+          fontIcon: require('./assets/icons/robotis-product-logo.svg'),
+          url: 'https://www.robotis.us/',
           style: {
-            backgroundColor: "transparent",
+            backgroundColor: "white",
             color: "#3776AB",
           },
         },
@@ -157,74 +90,51 @@ const skills = {
       illustration: require("./assets/lottie/charts"),
       illustrationDark: require("./assets/lottie/charts"),
       skills: [
-        "⚡ Building resposive website front end using React, Vue, Bootstrap.",
-        "⚡ Developing mobile applications using Flutter, React Native ",
-        "⚡ Creating application backend in Node, PHP",
+        "Developing machine learning models to solve a problem",
+        "Experienced with supervised, unsupervised, and reinforcement learning",
+        "Great interest in learning the latest technology",
       ],
       softwareSkills: [
         {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          skillName: "Tensorflow",
+          fontIcon: require('./assets/icons/tensorflow-icon.svg'),
+          url: '',
           style: {
             color: "#E34F26",
           },
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          skillName: "Keras",
+          fontIcon: "simple-icons:keras",
+          url: '',
+          style: {
+            backgroundColor: "white",
+            color: "#D00000",
+          },
+        },
+        {
+          skillName: "Scikit-Learn",
+          fontIcon: "simple-icons:scikit-learn",
+          url: '',
           style: {
             color: "#1572B6",
           },
         },
         {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
+          skillName: "OpenCV",
+          fontIcon: "logos-opencv",
+          url: '',
           style: {
             color: "#CC6699",
           },
         },
         {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
+          skillName: "Python",
+          fontIcon: "fab fa-python",
+          url: '',
           style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
+            backgroundColor: "transparent",
+            color: "#3776AB",
           },
         },
       ],
@@ -234,49 +144,88 @@ const skills = {
       illustration: require("./assets/lottie/webDev"),
       illustrationDark: require("./assets/lottie/webDev"),
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
+        "Building resposive website front end using React and Bootstrap.",
+        "Developing mobile applications using Expo and React Native ",
+        "Creating application backend in Node with various database",
       ],
       softwareSkills: [
         {
+          skillName: "HTML5",
+          fontIcon: "fab fa-html5",
+          url: '',
+          style: {
+            color: "#E34F26",
+          },
+        },
+        {
+          skillName: "CSS3",
+          fontIcon: "fab fa-css3-alt",
+          url: '',
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "JavaScript",
+          fontIcon: "fab fa-js",
+          url: '',
+          style: {
+            backgroundColor: "#000000",
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "ReactJS",
+          fontIcon: "fab fa-react",
+          url: '',
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "NodeJS",
+          fontIcon: "fab fa-node",
+          url: '',
+          style: {
+            color: "#339933",
+          },
+        },
+        {
           skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
+          fontIcon: "simple-icons:googlecloud",
+          url: '',
           style: {
             color: "#4285F4",
           },
         },
         {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
-        {
           skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
+          fontIcon: "fas fa-fire",
+          url: '',
           style: {
             color: "#FFCA28",
           },
         },
         {
           skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
+          fontIcon: "simple-icons:mongodb",
+          url: '',
+          style: {
+            color: "#47A248",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontIcon: "simple-icons:postgresql",
+          url: '',
           style: {
             color: "#47A248",
           },
         },
         {
           skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
+          fontIcon: "fab fa-docker",
+          url: '',
           style: {
             color: "#1488C6",
           },
@@ -294,29 +243,49 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
+          skillName: "KiCad",
+          fontIcon: "",
+          url: '',
           style: {
             color: "#FF2BC2",
           },
         },
         {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
+          skillName: "Altium",
+          fontIcon: "",
+          url: '',
           style: {
             color: "#F24E1E",
           },
         },
         {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
+          skillName: "Eagle",
+          fontIcon: "",
+          url: '',
           style: {
             color: "#FF7C00",
           },
         },
         {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
+          skillName: "LTspice",
+          fontIcon: "",
+          url: '',
+          style: {
+            color: "#000000",
+          },
+        },
+        {
+          skillName: "Solidworks",
+          fontIcon: "",
+          url: '',
+          style: {
+            color: "#000000",
+          },
+        },
+        {
+          skillName: "MATLAB",
+          fontIcon: "",
+          url: '',
           style: {
             color: "#000000",
           },
@@ -334,10 +303,10 @@ const educationInfo = {
   schools: [
     {
       schoolName: 'Institut Teknologi Bandung',
-      logo: require('./assets/images/harvardLogo.png'),
+      logo: require('./assets/images/Institut_Teknologi_Bandung_logo.svg'),
       subHeader: 'Bachelor of Electrical Engineering',
       duration: 'August 2016 - April 2021',
-      desc: 'Participated in the research of XXX and published 3 papers.',
+      desc: '',
       descBullets: [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -376,7 +345,7 @@ const workExperiences = {
       role: 'Robotics Software Engineer',
       company: 'Facebook',
       company_url: "https://www.facebook.com/",
-      companylogo: require('./assets/images/facebookLogo.png'),
+      companylogo: '',
       date: 'June 2018 – Present',
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -386,10 +355,10 @@ const workExperiences = {
       ],
     },
     {
-      role: 'Electronics and System ',
+      role: 'Electronics and System UAV',
       company: 'Quora',
       company_url: 'https://www.facebook.com',
-      companylogo: require('./assets/images/quoraLogo.png'),
+      companylogo: '',
       date: 'May 2017 – May 2018',
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -398,7 +367,7 @@ const workExperiences = {
       role: 'Software Engineer Intern',
       company: 'Airbnb',
       company_url: 'https://www.facebook.com',
-      companylogo: require('./assets/images/airbnbLogo.png'),
+      companylogo: '',
       date: 'Jan 2015 – Sep 2015',
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -411,7 +380,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: 'saadpasta', // Change to your github username to view your profile in Contact Section.
+  githubUserName: 'dimasyoga', // Change to your github username to view your profile in Contact Section.
   showGithubProfile: 'true', // Set true or false to show Contact profile using Github, defaults to true
   display: false, // Set false to hide this section, defaults to true
 };
@@ -423,7 +392,7 @@ const bigProjects = {
   subtitle: 'SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH',
   projects: [
     {
-      image: require('./assets/images/saayaHealthLogo.webp'),
+      image: '',
       projectName: "Saayahealth",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -436,7 +405,7 @@ const bigProjects = {
       ],
     },
     {
-      image: require('./assets/images/nextuLogo.webp'),
+      image: '',
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -464,7 +433,7 @@ const achievementSection = {
       title: 'Google Code-In Finalist',
       subtitle:
         'First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.',
-      image: require('./assets/images/codeInLogo.webp'),
+      image: '',
       footerLink: [
         {
           name: 'Certification',
@@ -487,7 +456,7 @@ const achievementSection = {
       title: 'Google Assistant Action',
       subtitle:
         'Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.',
-      image: require('./assets/images/googleAssistantLogo.webp'),
+      image: '',
       footerLink: [
         {
           name: 'View Google Assistant Action',
@@ -500,7 +469,7 @@ const achievementSection = {
     {
       title: 'PWA Web App Developer',
       subtitle: 'Completed Certifcation from SMIT for PWA Web App Development',
-      image: require('./assets/images/pwaLogo.webp'),
+      image: '',
       footerLink: [
         { name: 'Certification', url: '' },
         {
@@ -589,7 +558,6 @@ export {
   illustration,
   greeting,
   socialMediaLinks,
-  skillsSection,
   skills,
   educationInfo,
   techStack,

@@ -1,16 +1,16 @@
 import React, { useContext } from 'react';
 import './Skills.css';
 import SoftwareSkill from '../../components/softwareSkills/SoftwareSkill';
-import { illustration, skillsSection, skills } from '../../portfolio';
+import { illustration, skills } from '../../portfolio';
 import { Fade } from 'react-reveal';
-import light from "../../assets/images/drone-animation-light.gif"
-import dark from "../../assets/images/drone-animation-dark.gif"
+import light from "../../assets/images/programmer.svg"
+import dark from "../../assets/images/programmer.svg"
 import DisplayLottie from '../../components/displayLottie/DisplayLottie';
 import StyleContext from '../../contexts/StyleContext';
 
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
-  if (!skillsSection.display) {
+  if (!skills.display) {
     return null;
   }
   return (
@@ -37,9 +37,9 @@ export default function Skills() {
                 >
                   {skill.title}{' '}
                 </h1>
-                <SoftwareSkill />
+                <SoftwareSkill softwareSkills={skill.softwareSkills}/>
                 <div>
-                  {skill.skills.map((skills, j) => {
+                  {skill.skills.map((skill, j) => {
                     return (
                       <p
                         key={j}
@@ -49,7 +49,7 @@ export default function Skills() {
                             : 'subTitle skills-text'
                         }
                       >
-                        {skills}
+                        {skill}
                       </p>
                     );
                   })}
