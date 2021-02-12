@@ -27,7 +27,7 @@ const socialMediaLinks = {
   gmail: 'dimasyogapra@gmail.com',
   gitlab: '',
   facebook: '',
-  medium: 'https://medium.com/@dimasyogapra',
+  // medium: 'https://medium.com/@dimasyogapra',
   stackoverflow: '',
   // Instagram and Twitter are also supported in the links!
   display: true, // Set true to display this section, defaults to false
@@ -43,9 +43,9 @@ const skills = {
       illustration: require("./assets/lottie/robotic"),
       illustrationDark: require("./assets/lottie/robotic-dark"),
       skills: [
-        "Developing robots with advanced technology",
-        "Experienced working with various type of robots such as wheeled robots, bipedal robots, and flying robots",
-        "Working in teams for various national and international robotics competitions",
+        "✔️ Developing robots with advanced technology",
+        "✔️ Experienced working with various type of robots",
+        "✔️ Experienced working in teams for various national and international robotics competitions",
       ],
       softwareSkills: [
         {
@@ -67,7 +67,7 @@ const skills = {
         },
         {
           skillName: "ArduPilot",
-          fontIcon: require('./assets/icons/ardupilot_logo.svg'),
+          fontIcon: require('./assets/icons/ardupilot_logo.png'),
           url: 'https://ardupilot.org/',
           style: {
             backgroundColor: "white",
@@ -90,9 +90,9 @@ const skills = {
       illustration: require("./assets/lottie/charts"),
       illustrationDark: require("./assets/lottie/charts"),
       skills: [
-        "Developing machine learning models to solve a problem",
-        "Experienced with supervised, unsupervised, and reinforcement learning",
-        "Great interest in learning the latest technology",
+        "✔️ Developing machine learning models to solve a problem",
+        "✔️ Experienced with supervised, unsupervised, and reinforcement learning",
+        "✔️ Great interest in learning the latest technology",
       ],
       softwareSkills: [
         {
@@ -144,9 +144,9 @@ const skills = {
       illustration: require("./assets/lottie/webDev"),
       illustrationDark: require("./assets/lottie/webDev"),
       skills: [
-        "Building resposive website front end using React and Bootstrap.",
-        "Developing mobile applications using Expo and React Native ",
-        "Creating application backend in Node with various database",
+        "✔️ Building webpage using React and Bootstrap.",
+        "✔️ Developing mobile applications using Expo and React Native ",
+        "✔️ Creating application backend in Node with various database",
       ],
       softwareSkills: [
         {
@@ -179,6 +179,7 @@ const skills = {
           fontIcon: require('./assets/icons/React-icon.svg'),
           url: 'https://reactjs.org/',
           style: {
+            backgroundColor: "white",
             color: "#61DAFB",
           },
         },
@@ -187,6 +188,7 @@ const skills = {
           fontIcon: require('./assets/icons/Node.js_logo.svg'),
           url: 'https://nodejs.org/en/',
           style: {
+            backgroundColor: "white",
             color: "#339933",
           },
         },
@@ -195,6 +197,7 @@ const skills = {
           fontIcon: require('./assets/icons/google-cloud-platform.svg'),
           url: 'https://cloud.google.com/',
           style: {
+            backgroundColor: "white",
             color: "#4285F4",
           },
         },
@@ -203,6 +206,7 @@ const skills = {
           fontIcon: require('./assets/icons/google_firebase.svg'),
           url: 'https://firebase.google.com/',
           style: {
+            backgroundColor: "white",
             color: "#FFCA28",
           },
         },
@@ -211,6 +215,7 @@ const skills = {
           fontIcon: require('./assets/icons/mongodb.svg'),
           url: 'https://www.mongodb.com/',
           style: {
+            backgroundColor: "white",
             color: "#47A248",
           },
         },
@@ -219,14 +224,16 @@ const skills = {
           fontIcon: require('./assets/icons/Postgresql_elephant.svg'),
           url: 'https://www.postgresql.org/',
           style: {
+            backgroundColor: "white",
             color: "#47A248",
           },
         },
         {
           skillName: "Docker",
-          fontIcon: require('./assets/icons/docker.svg'),
+          fontIcon: require('./assets/icons/docker.png'),
           url: 'https://www.docker.com/',
           style: {
+            backgroundColor: "white",
             color: "#1488C6",
           },
         },
@@ -237,9 +244,9 @@ const skills = {
       illustration: require("./assets/lottie/circuit"),
       illustrationDark: require("./assets/lottie/circuit"),
       skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
+        "✔️ Designing PCB schematic and layout",
+        "✔️ Modeling mechanical elements and doing manufacturing with a 3d print or laser cut",
+        "✔️ Creating electronic projects using various microcontrollers and sensors",
       ],
       softwareSkills: [
         {
@@ -253,7 +260,7 @@ const skills = {
         },
         {
           skillName: "Altium",
-          fontIcon: require('./assets/icons/altium-logo.svg'),
+          fontIcon: require('./assets/icons/altium-logo.png'),
           url: 'https://www.altium.com/',
           style: {
             backgroundColor: "white",
@@ -262,7 +269,7 @@ const skills = {
         },
         {
           skillName: "Eagle",
-          fontIcon: require('./assets/icons/eagle-logo.svg'),
+          fontIcon: require('./assets/icons/eagle-logo.png'),
           url: 'https://www.autodesk.com/products/eagle/overview',
           style: {
             backgroundColor: "white",
@@ -280,7 +287,7 @@ const skills = {
         },
         {
           skillName: "Solidworks",
-          fontIcon: require('./assets/icons/solidworks-logo.svg'),
+          fontIcon: require('./assets/icons/solidworks-logo.png'),
           url: 'https://www.solidworks.com/',
           style: {
             backgroundColor: "white",
@@ -289,8 +296,17 @@ const skills = {
         },
         {
           skillName: "MATLAB",
-          fontIcon: require('./assets/icons/Matlab_Logo.svg'),
+          fontIcon: require('./assets/icons/Matlab_Logo.png'),
           url: 'https://www.mathworks.com/products/matlab.html',
+          style: {
+            backgroundColor: "white",
+            color: "#D00000",
+          },
+        },
+        {
+          skillName: "Arduino",
+          fontIcon: require('./assets/icons/Arduino_Logo.svg'),
+          url: 'https://www.arduino.cc/',
           style: {
             backgroundColor: "white",
             color: "#D00000",
@@ -349,34 +365,33 @@ const workExperiences = {
   experience: [
     {
       role: 'Robotics Software Engineer',
-      company: 'Facebook',
-      company_url: "https://www.facebook.com/",
-      companylogo: '',
-      date: 'June 2018 – Present',
+      company: 'STEI ITB',
+      company_url: "https://stei.itb.ac.id/en",
+      companylogo: require('./assets/images/Institut_Teknologi_Bandung_logo.svg'),
+      date: 'Sep 2020 – Nov 2020',
       desc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      descBullets: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      ],
+        'Working as a programmer of Single Platform Multi-Function Mobile Robot for Service Robot in Hospital project',
+      descBullets: [],
     },
     {
       role: 'Electronics and System UAV',
-      company: 'Quora',
-      company_url: 'https://www.facebook.com',
-      companylogo: '',
-      date: 'May 2017 – May 2018',
+      company: 'HALE UAV Research Team ITB',
+      company_url: 'https://hale2019rispro.wixsite.com/home',
+      companylogo: require('./assets/images/Halelogo_1.png'),
+      date: 'Sep 2019 – Aug 2020',
       desc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Working as an Electrical and System Engineer for High Altitude Long Endurance Unmanned Aerial Vehicle (HALE UAV) Project at Center for Unmanned System Studies (CentrUMS) ITB',
+      descBullets: [],
     },
     {
-      role: 'Software Engineer Intern',
-      company: 'Airbnb',
-      company_url: 'https://www.facebook.com',
-      companylogo: '',
-      date: 'Jan 2015 – Sep 2015',
+      role: 'Backend Engineer Intern',
+      company: 'PT. Xirka Silicon Technology',
+      company_url: 'http://www.xirkachipset.com/',
+      companylogo: require('./assets/images/xirka-logo.jpg'),
+      date: 'May 2019 – Aug 2019',
       desc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Working as a backend engineer to develop a Smartlog System to record employee attendance',
+      descBullets: [],
     },
   ],
 };
@@ -423,7 +438,7 @@ const bigProjects = {
       ],
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -485,7 +500,7 @@ const achievementSection = {
       ],
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -546,11 +561,11 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji('Contact Me ☎️'),
+  title: emoji('Contact Me'),
   subtitle:
-    'Discuss a project or just want to say hi? My Inbox is open for all.',
-  number: '+92-3243454077',
-  emailAddress: 'saadpasta70@gmail.com',
+    '',
+  number: '+62-895364823046',
+  emailAddress: 'dimasyogapra@gmail.com',
 };
 
 // Twitter Section
