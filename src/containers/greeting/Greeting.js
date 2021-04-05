@@ -5,8 +5,6 @@ import './Greeting.css';
 import greetingAnimation from '../../assets/lottie/manAvatar';
 import greetingAnimationDark from '../../assets/lottie/manAvatar-dark';
 import DisplayLottie from '../../components/displayLottie/DisplayLottie';
-import SocialMedia from '../../components/socialMedia/SocialMedia';
-import Button from '../../components/button/Button';
 
 import { illustration, greeting } from '../../portfolio';
 import StyleContext from '../../contexts/StyleContext';
