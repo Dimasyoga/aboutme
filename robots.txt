@@ -1,2 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Allow: /
+Sitemap: https://dimasyoga.github.io/sitemap/sitemap-index.xml
+Host: https://dimasyoga.github.io
