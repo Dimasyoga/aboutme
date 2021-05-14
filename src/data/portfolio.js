@@ -1,5 +1,9 @@
 ﻿// Social Media Links
 
+export const about = {
+  description : "Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor Lorem ipsum et dolor",
+};
+
 export const socialMediaLinks = {
   link : [
     {
@@ -14,32 +18,32 @@ export const socialMediaLinks = {
 };
 
 // PROJECTS DATA
-export const projectsData = [
+export const worksData = [
   {
     id: 1,
     img: 'project.jpg',
-    title: '',
+    title: '1',
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/dimasyoga', // if no repo, the button will not show up
   },
   {
     id: 2,
     img: 'project.jpg',
-    title: '',
+    title: '2',
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/dimasyoga', // if no repo, the button will not show up
   },
   {
     id: 3,
     img: 'project.jpg',
-    title: '',
+    title: '3',
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/dimasyoga', // if no repo, the button will not show up
   },
 ];

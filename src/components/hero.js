@@ -24,9 +24,9 @@ const Header = () => {
                 <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                     <h1 className="hero-title">
                         Hi, my name is
-                        <span className="text-color-main">Your Name</span>
+                        <span className="text-color-main"> Dimas Yoga</span>
                         <br />
-                        I'm the Unknown Developer.
+                        <var>Robotic<sup>2</sup></var> + <var>InternetOfThing<sup>2</sup></var> + <var>MachineLearning<sup>2</sup></var>
                     </h1>
                 </Fade>
                 <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

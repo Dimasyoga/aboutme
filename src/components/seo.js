@@ -26,14 +26,14 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const defaultTitle = site.siteMetadata.title || title
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={defaultTitle}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
@@ -42,7 +42,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           property: `og:description`,
@@ -62,7 +62,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           name: `twitter:description`,
@@ -83,7 +83,7 @@ Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default Seo

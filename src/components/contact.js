@@ -19,7 +19,7 @@ const Contact = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--resume"
-                        href='mailto:dimasyoga@gmail.com'
+                        href='mailto:dimasyogapra@gmail.com'
                         >
                             Let's Talk
                         </a>
