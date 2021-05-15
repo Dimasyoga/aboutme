@@ -9,6 +9,18 @@
     padding-top: 5rem;
   }
 
+  .imageBox{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  @media (max-width: 1000px) {
+    .imageBox {
+      flex-direction: column;
+    }
+  }
+
   .project-wrapper {
     margin-bottom: 15rem;
 
@@ -50,7 +62,7 @@
     }
 
     &__image {
-      width: 90%;
+      width: 350px;
       margin: 0 auto;
 
       @include respond(tab-land) {

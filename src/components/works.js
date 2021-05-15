@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import { worksData } from '../data/portfolio'
-import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticQuery, graphql } from "gatsby"
+import ImageBox from "../components/imagebox"
 
 const Works = () => {
 
@@ -31,7 +30,7 @@ const Works = () => {
                 relativePath
                 name
                 childImageSharp {
-                  gatsbyImageData(placeholder: BLURRED, height: 400, width: 400, formats: PNG)
+                  gatsbyImageData(placeholder: BLURRED, height: 300, width: 300, formats: PNG)
                 }
               }
             }
@@ -47,7 +46,8 @@ const Works = () => {
             </Fade>
               {worksData.map((project) => {
                 const { title, info, info2, url, repo, img, id } = project;
-                const imageData = data.images.edges.find((n) => n.node.relativePath.includes(img));
+                var imageData = []
+                img.forEach((item)=>{imageData.push(data.images.edges.find((n) => n.node.relativePath.includes(item)).node.childImageSharp.gatsbyImageData)})
 
                 return (
                   <Row key={id}>
@@ -68,29 +68,10 @@ const Works = () => {
                             </p>
                             <p className="mb-4">{info2 || ''}</p>
                           </div>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="cta-btn cta-btn--hero"
-                            href={url || '#!'}
-                          >
-                            See Live
-                          </a>
-
-                          {repo && (
-                            <a
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="cta-btn text-color-main"
-                              href={repo}
-                            >
-                              Source Code
-                            </a>
-                          )}
                         </div>
                       </Fade>
                     </Col>
-                    <Col lg={8} sm={12}>
+                    <Col lg={4} sm={12}>
                       <Fade
                         right={isDesktop}
                         bottom={isMobile}
@@ -98,35 +79,7 @@ const Works = () => {
                         delay={700}
                         distance="30px"
                       >
-                        <div className="project-wrapper__image">
-                          <a
-                            href={url || '#!'}
-                            target="_blank"
-                            aria-label="Project Link"
-                            rel="noopener noreferrer"
-                          >
-                            <Tilt
-                              options={{
-                                reverse: false,
-                                max: 8,
-                                perspective: 1000,
-                                scale: 1,
-                                speed: 300,
-                                transition: true,
-                                axis: null,
-                                reset: true,
-                                easing: 'cubic-bezier(.03,.98,.52,.99)',
-                              }}
-                            >
-                              <div data-tilt className="thumbnail rounded">
-                                <GatsbyImage 
-                                  image={imageData.node.childImageSharp.gatsbyImageData}
-                                  alt={title}
-                                />
-                              </div>
-                            </Tilt>
-                          </a>
-                        </div>
+                        <ImageBox isDesktop={isDesktop} imageData={imageData} title={title}/>
                       </Fade>
                     </Col>
                   </Row>

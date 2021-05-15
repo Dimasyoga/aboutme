@@ -16,12 +16,11 @@ export const socialMediaLinks = {
     },
   ]
 };
-
 // PROJECTS DATA
 export const worksData = [
   {
     id: 1,
-    img: 'project.jpg',
+    img: ['project.jpg', 'project.jpg'],
     title: '1',
     info: '',
     info2: '',
@@ -30,7 +29,7 @@ export const worksData = [
   },
   {
     id: 2,
-    img: 'project.jpg',
+    img: ['project.jpg', 'project.jpg', 'project.jpg'],
     title: '2',
     info: '',
     info2: '',
@@ -39,7 +38,7 @@ export const worksData = [
   },
   {
     id: 3,
-    img: 'project.jpg',
+    img: ['project.jpg', 'project.jpg'],
     title: '3',
     info: '',
     info2: '',
