@@ -21,7 +21,7 @@ export const worksData = [
   {
     id: 1,
     img: ['project.jpg', 'project.jpg'],
-    title: '1',
+    title: 'PT Xirka Silicon Technology',
     info: '',
     info2: '',
     url: '',
@@ -30,7 +30,7 @@ export const worksData = [
   {
     id: 2,
     img: ['project.jpg', 'project.jpg', 'project.jpg'],
-    title: '2',
+    title: 'High Altitude Long Endurance UAV Project',
     info: '',
     info2: '',
     url: '',
@@ -39,7 +39,7 @@ export const worksData = [
   {
     id: 3,
     img: ['project.jpg', 'project.jpg'],
-    title: '3',
+    title: 'Mobile Robot Service Project',
     info: '',
     info2: '',
     url: '',
