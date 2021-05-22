@@ -32,10 +32,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - by{' '}
-          <a href="https://github.com/dimasyogapra" target="_blank" rel="noopener noreferrer">
-            Dimas Yoga
-          </a>
+          © {new Date().getFullYear()} - Dimas Yoga
         </p>
       </Container>
     </footer>

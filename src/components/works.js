@@ -44,13 +44,21 @@ const Works = () => {
             <Fade bottom duration={1000} delay={300} distance="0px">
                 <h2 className="section-title">Works Experience</h2>
             </Fade>
-              {worksData.map((project) => {
-                const { title, info, info2, url, repo, img, id } = project;
+              {worksData.map((project, index) => {
+                const { company, title, info, url, img } = project;
                 var imageData = []
                 img.forEach((item)=>{imageData.push(data.images.edges.find((n) => n.node.relativePath.includes(item)).node.childImageSharp.gatsbyImageData)})
+                var attr = {}
+                if (url){
+                  attr = {
+                              href: url,
+                              rel: "noopener noreferrer",
+                              target: "_blank",
+                            }
+                }
 
                 return (
-                  <Row key={id}>
+                  <Row key={index}>
                     <Col lg={4} sm={12}>
                       <Fade
                         left={isDesktop}
@@ -60,13 +68,17 @@ const Works = () => {
                         distance="30px"
                       >
                         <div className="project-wrapper__text">
-                          <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                          <a
+                            {...attr}
+                          >
+                            <h3 className="project-wrapper__text-title">{company || 'Company'}</h3>  
+                          </a>
+                          <h4 className="project-wrapper__text-title2">{title || 'Title'}</h4>
                           <div>
                             <p>
                               {info ||
-                                'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                                'Info'}
                             </p>
-                            <p className="mb-4">{info2 || ''}</p>
                           </div>
                         </div>
                       </Fade>
