@@ -9,11 +9,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: npm install and build
-        run: |
-          npm install
-          npm run build
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Set up node 
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: use cache 
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+      - name: Install package
+        run: npm install
+      - name: Build
+        run: npm run build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
